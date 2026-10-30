@@ -6,7 +6,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 const brand = Color(0xFF6558D3);
 const ink = Color(0xFF202137);
-const apiDefault = String.fromEnvironment('API_BASE_URL', defaultValue: 'http://10.0.2.2:5000/api');
+const apiDefault = String.fromEnvironment(
+  'API_BASE_URL',
+  defaultValue: 'https://stylesync-backend-iezf.onrender.com/api',
+);
 
 void main() => runApp(const StyleSyncApp());
 
